@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:background="@color/abu2"
+    >
+
+    <TextView
+        android:id="@+id/namaResto"
+        android:layout_width="71dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="24dp"
+        android:text="RESTORAN"
+        android:textColor="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/splacescreen"
+        android:layout_width="141dp"
+        android:layout_height="98dp"
+        android:src="@drawable/splacesreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaResto"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/tanggal"
+        android:layout_width="198dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:hint="Tanggal"
+        android:textColorHint="@color/Silver"
+        android:textColor="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splacescreen" />
+
+    <ImageView
+        android:id="@+id/icoNTanggal"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tanggal"
+        app:layout_constraintStart_toEndOf="@+id/tanggal"
+        app:layout_constraintTop_toTopOf="@+id/tanggal"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <EditText
+        android:id="@+id/jam"
+        android:layout_width="198dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:hint="Jam"
+        android:textColorHint="@color/Silver"
+        android:textColor="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal" />
+
+    <ImageView
+        android:id="@+id/icoNJam"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jam"
+        app:layout_constraintStart_toEndOf="@+id/jam"
+        app:layout_constraintTop_toTopOf="@+id/jam"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+    <EditText
+        android:id="@+id/nomorMeja"
+        android:layout_width="201dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:hint="Nomor Meja"
+        android:textColor="@color/Silver"
+        android:textColorHint="@color/Silver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jam" />
+
+    <Button
+        android:id="@+id/submiTNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomorMeja"
+        app:layout_constraintVertical_bias="0.135" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
